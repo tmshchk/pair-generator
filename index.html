@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <a href="javascript: addPlayer();">Добавить игрока</a>
-    <a href="javascript: addTeam();">Добавить команду</a>
-    <br><br>
-    <a href="javascript: randomGame();">Распределить команды по игрокам</a>
-    <br><br>
-    <a href="javascript: console.log(players);">Показать игроков</a>
-    <a href="javascript: console.log(teams);">Показать команды</a>
-    <script src="./random.js"></script>
+    <div
+        class="flex flex-col items-center p-12 m-10 max-w-lg mx-auto bg-white rounded-xl shadow-lg border border-solid border-slate-200">
+
+        <h1 class="text-xl font-medium text-black mb-2">Генератор игровых пар</h1>
+
+        <p class="text-slate-500 text-center mb-4">Добавьте список игроков, команды и нажмите кнопку
+            «Сгенерировать пары»</p>
+
+        <form id="form-player"
+            class="flex items-center space-x-4">
+            <input id="input-player"
+                class="p-4 rounded border border-solid border-slate-500/50"
+                type="text"
+                placeholder="Введите имя игрока"
+                required>
+            <button class="p-4 rounded bg-teal-500 text-white shadow-lg bg-indigo-500/50">+</button>
+        </form>
+
+        <form id="form-team"
+            class="flex items-center space-x-4">
+            <input id="input-team"
+                class="p-4 mt-4 rounded border border-solid border-slate-500/50"
+                type="text"
+                placeholder="Введите название команды"
+                required>
+            <button class="p-4 mt-4 rounded bg-teal-500 text-white shadow-lg bg-indigo-500/50">+</button>
+        </form>
+        <div id="list-data"
+            class="mt-2"></div>
+
+        <button id="button-random"
+            class="p-4 mt-4 rounded bg-teal-500 text-white shadow-lg shadow-teal-500/50">Сгенерировать
+            пары</button>
+        <div id="result"
+            class="mt-4 text-center"></div>
+    </div>
+    <div>
+
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
