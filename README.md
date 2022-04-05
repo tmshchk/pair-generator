@@ -1,6 +1,6 @@
 # Генератор пар
 
-[Попробовать вживую на GitHub](https://tmshchk.github.io/pair-generator/)
+[Попробовать вживую на GitHub Pages](https://tmshchk.github.io/pair-generator/)
 
 Это мини-приложение помогает случайным образом распределить данные из двух списков (массивов).
 
