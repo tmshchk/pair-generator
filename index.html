@@ -9,10 +9,20 @@
   <body class="bg-slate-50">
 
     <div class="max-w-screen-md bg-white p-12 m-12 mx-auto rounded-xl shadow-lg">
-      <h1 class="text-3xl font-bold text-slate-500 mb-4">Генератор игровых пар</h1>
+      <h1 class="text-3xl font-bold text-slate-500 mb-4">Генератор пар</h1>
 
-      <button id="button-random"
-        class="p-4 mt-4 rounded border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white">Сгенерировать пары для 6 туров</button>
+      <div class="flex flex-col">
+        <h2 class="mb-2">Введите или вставьте данные для первого списка. Каждое значение должно быть <strong>с новой строки</strong></h2>
+        <textarea name="" id="firstList" cols="30" rows="4" class="p-4 mb-8 border rounded"></textarea>
+
+        <h2 class="mb-2">Введите или вставьте данные для второго списка. Количество <strong>должно быть равно или больше</strong>, чем в первом списке</h2>
+        <textarea name="" id="secondList" cols="30" rows="4" class="p-4 mb-8 border rounded"></textarea>
+
+        <button id="button-random"
+          class="p-4 mt-4 rounded border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white">Сгенерировать
+          пары</button>
+      </div>
+
 
       <div id="result" class="mt-6 text-slate-500"></div>
 
